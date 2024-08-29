@@ -1,9 +1,9 @@
 <script setup>
 const getImageSrc = (index) => {
   const images = [
-    "/src/assets/images/section4-card-01.jpg",
-    "/src/assets/images/section4-card-02.jpg",
-    "/src/assets/images/section4-card-01.jpg"
+   "/images/section4-card-01.jpg",
+   "/images/section4-card-02.jpg",
+     "/images/section4-card-01.jpg"
   ];
   return images[index];
 };
