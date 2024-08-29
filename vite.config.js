@@ -10,7 +10,7 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
-  base: 'Single-Page',
+  base: '/Single-Page/',
   build: {
     outDir: 'docs',
   },
