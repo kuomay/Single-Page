@@ -27,7 +27,7 @@
       <div class="about__bottom flex flex-col items-center justify-center mt-8 mb-16">
         <h3 class="c-subtitle">愛心定存</h3>
         <p class="c-text text-center">
-          讓愛，走入單親弱勢的家庭，為長大的孩子點一盞生日燭光<br />
+          讓愛，走入單親弱勢的家庭，為哈哈式喔好點一盞生日燭光<br />
           在因疾病失去視力的朋友旁，陪他重新學習生活的一切<br />
           陪在獨居長者旁，在身體不適時能即時援助<br />
           你的捐助 讓這些美好時刻能持續發生
