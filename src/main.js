@@ -1,6 +1,10 @@
 import 'vuetify/styles'
 import './assets/main.css'
 import './assets/index.css'
+import 'vuetify/styles'
+import 'material-design-icons-iconfont/dist/material-design-icons.css';
+import '@mdi/font/css/materialdesignicons.css';
+import 'vuetify/dist/vuetify.min.css';
 
 
 import { createApp } from 'vue'
@@ -14,6 +18,7 @@ import { mdi } from 'vuetify/iconsets/mdi-svg'
 
 import App from './App.vue'
 import router from './router'
+
 
 const vuetify = createVuetify({
     components,

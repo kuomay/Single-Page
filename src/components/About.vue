@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <section id="about" class="about__content w-screen min-h-screen flex flex-col items-center justify-center py-20">
     <div class="about__container w-full max-w-7xl px-4">
@@ -73,7 +77,7 @@
 
 .video-container iframe {
   width: 100%;
-  height: 650px; /* 增加影片高度 */
+  height: 650px; 
   max-width: 1000px;
   margin-top: 30px;
 }
@@ -92,12 +96,12 @@
 }
 
 .bounce-text {
-  font-size: 2.375rem; /* 與 c-subtitle 一致 */
-  letter-spacing: 2px; /* 與 c-subtitle 一致 */
-  color: #fff; /* 與 c-subtitle 一致 */
-  font-weight: 700; /* 與 c-subtitle 一致 */
-  line-height: 150%; /* 與 c-subtitle 一致 */
-  text-align: center; /* 與 c-subtitle 一致 */
+  font-size: 2.375rem; 
+  letter-spacing: 2px; 
+  color: #fff; 
+  font-weight: 700; 
+  line-height: 150%; 
+  text-align: center; 
   display: inline-block;
   position: relative;
   border-bottom: 5px solid #f6c911;
