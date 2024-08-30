@@ -36,6 +36,7 @@ const increaseModel = () => {
 
 <template>
   <div id="active">
+    <h2 class="text-white text-center display-3 mt-10 mb-5" style="font-size: 4rem;">活動快報</h2>
     <div class="d-flex justify-space-around align-center py-4">
       <v-btn icon="mdi-minus" variant="text" @click="decreaseModel">
         <v-icon>mdi-chevron-left</v-icon>
@@ -50,7 +51,7 @@ const increaseModel = () => {
         <v-container>
           <v-row>
             <v-col v-for="item in items.slice((n-1)*3, n*3)" :key="item.title" cols="12" md="4">
-              <v-card :color="item.color" height="200">
+              <v-card :color="item.color" height="350">
                 <v-card-title>{{ item.title }}</v-card-title>
                 <v-card-text>{{ item.content }}</v-card-text>
               </v-card>
