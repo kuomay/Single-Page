@@ -11,7 +11,7 @@
       <div class="flex flex-col items-center justify-center">
         <div class="flex flex-row mb-8 mt-16">
           <div class="mr-16">
-            <h3 class="mb-4">將捐款公開透明刻在骨子裡</h3>
+            <h3 class="mb-4 typewriter">將捐款公開透明刻在骨子裡</h3>
             <p class="text-xl mt-10">聯合勸募的成立源於一起社會上的詐騙事件，為了打<br>造一個讓大眾能放心託付捐款的平台，聯合勸募因此<br>應運而生，清清楚楚明明白白是我們的核心理念，是<br>永不變心的初衷。</p>
           </div>
           <div>
@@ -24,15 +24,14 @@
             <img src="/src/assets/images/who-item-02@1x.png">
           </div>
           <div>
-            <h3 class="mb-4">資源不該掌握在少數單位手中</h3>
+            <h3 class="mb-4 typewriter">資源不該掌握在少數單位手中</h3>
             <p class="text-xl mt-10">上萬家公益組織，愛心資源卻過分集中，前3大組織<br>募款所得是聯合勸募10倍以上，但聯合勸募資源是直<br>接捐注400家中小型社福單位，越有資源越容易獲得<br>關注，長期下來大者恆大，地方性社福組織卻有心無<br>力。</p>
         </div>
-          
         </div>
 
         <div class="flex flex-row mb-8 mt-16">
           <div class="mr-16">
-            <h3 class="mb-4">一筆搞定！你關心的助人議題</h3>
+            <h3 class="mb-4 typewriter">一筆搞定！你關心的助人議題</h3>
             <p class="text-xl mt-10">聯合勸募的成立源於一起社會上的詐騙事件，為了打<br>造一個讓大眾能放心託付捐款的平台，聯合勸募因此<br>應運而生，清清楚楚明明白白是我們的核心理念，是<br>永不變心的初衷。</p>
           </div>
           <div>
@@ -45,10 +44,9 @@
             <img src="/src/assets/images/who-item-04@1x.png">
           </div>
           <div>
-            <h3 class="mb-4">專業才能把好事做好</h3>
+            <h3 class="mb-4 typewriter">專業才能把好事做好</h3>
             <p class="text-xl mt-10">上萬家公益組織，愛心資源卻過分集中，前3大組織<br>募款所得是聯合勸募10倍以上，但聯合勸募資源是直<br>接捐注400家中小型社福單位，越有資源越容易獲得<br>關注，長期下來大者恆大，地方性社福組織卻有心無<br>力。</p>
         </div>
-          
         </div>
       </div>
     </div>
@@ -92,6 +90,20 @@ h3 {
   font-weight: 1000;
   font-family: "Noto Sans TC", sans-serif;
   letter-spacing: 1.1px;
+  overflow: hidden; /* 確保文字在動畫期間不超出容器 */
+  white-space: nowrap; /* 防止文字自動換行 */
+  border-right: .15em solid; /* 創建光標效果 */
+  animation: typing 4s steps(30) infinite, blink-caret .75s step-end infinite; /* 添加打字和閃爍動畫 */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
 }
 
 h3::after {
@@ -104,11 +116,9 @@ h3::after {
   background-color: #3bb1e6;
 }
 
-
 .shadow-text {
   animation: shadow-move 6s infinite alternate ease-in-out;
 }
-
 
 @keyframes shadow-move {
   0% {
@@ -127,7 +137,4 @@ h3::after {
     text-shadow: 15px 15px 30px rgba(0, 0, 128, 0.7), -15px -15px 40px rgba(75, 0, 130, 0.5);
   }
 }
-
-
-
 </style>
