@@ -1,5 +1,6 @@
 <script setup>
-
+import section2Cloud01 from '@/assets/images/section2-cloud-01.svg';
+import section2Cloud02 from '@/assets/images/section2-cloud-02.svg';
 </script>
 
 <template>
@@ -7,6 +8,12 @@
     <div class="about__container w-full max-w-7xl px-4">
       <!-- Top Section -->
       <div class="about__top flex flex-col items-center justify-center w-full">
+        <div class="cloud">
+          <img :src="section2Cloud01" alt="Cloud Image" />
+        </div>
+        <div class="cloud2">
+          <img :src="section2Cloud02" alt="Cloud Image" />
+        </div>
         <h3 class="bounce-text mt-16">
           <span class="mr-1">愛</span>
           <span class="mr-1">別</span>
@@ -47,6 +54,48 @@
 </template>
 
 <style scoped>
+.section {
+  position: relative; /* 確保容器是相對定位 */
+  width: 100%; /* 確保容器寬度是 100% */
+}
+
+.cloud {
+  position: absolute; /* 將雲容器絕對定位 */
+  left: 0; /* 將雲容器固定在左側 */
+  top: 600px; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.cloud2 {
+  position: absolute; /* 將雲容器絕對定位 */
+  right: 0; /* 將雲容器固定在右側 */
+  top: 600px; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.cloud img {
+  display: block; /* 確保圖片是塊級元素 */
+  animation: float 3s ease-in-out infinite;
+}
+
+.cloud2 img {
+  display: block; /* 確保圖片是塊級元素 */
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 
 .about__content {
   background: linear-gradient(180deg, rgba(2, 44, 82, 0) 0%, #022C52 2.33%, #022C52 108.23%);
@@ -72,7 +121,6 @@
   width: 100%;
   max-width: 1000px;
   margin: 20px auto;
-
 }
 
 .video-container iframe {
